@@ -1,0 +1,10 @@
+This file will contain some of the useful links for the developement of the project.
+
+1. For basic js tutorial
+
+https://www.youtube.com/watch?v=PkZNo7MFNFg
+
+2. For Getting overall idea from tic-tac-toe game (how to procede)
+
+- This is for getting idea that how to connect html, css, js
+https://www.youtube.com/watch?v=P2TcQ3h0ipQ&t=513s
