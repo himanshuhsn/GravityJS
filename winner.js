@@ -29,7 +29,7 @@ function checkWin(board, player, curPos){
                 break;
             }
 
-            console.log( eval(change[0])+''+eval(change[1]) );
+            //console.log( eval(change[0])+''+eval(change[1]) );
 
             if(document.getElementById( eval(change[0])+''+eval(change[1]) ).innerText != player){
                 break;
