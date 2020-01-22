@@ -1,9 +1,5 @@
 var origBoard = [];
 
-//Assuming player 1 chhoses 0
-const player1 = 'O';
-const player2 = 'X';
-
 //selecting all the cells
 for (let i = 0; i < 7; i++) {
     const row = document.querySelectorAll(`.cell${i}`);
@@ -37,6 +33,7 @@ function turnClick(square) {
 }
 
 let gameWon = false;
+let oldr=0, oldc=0;
 function turn(squareId, player) {
 
     let r = parseInt(squareId[0], 10); //r for row
@@ -47,16 +44,18 @@ function turn(squareId, player) {
 
     if ( r == 6 || origBoard[r + 1][c].innerText != '') {
         if (origBoard[r][c].innerText == '') {
-            document.getElementById(squareId).innerText = player;
+            origBoard[oldr][oldc].style.removeProperty('background-color');
+            origBoard[r][c].innerText = player;
+            origBoard[r][c].style.backgroundColor = curColor;
+            oldr = r, oldc = c;
             turnChecker++;
+            gameWon = checkWin(origBoard, player, squareId);
         }
         else if(origBoard[r][c].innerText != '') console.log('Place already occupied');
     }
     else {
         console.log('bad place');
     }
-
-    gameWon = checkWin(origBoard, player, squareId);
 
     if (gameWon) {
         console.log(`${wonPlayer} Won`);
@@ -66,6 +65,10 @@ function turn(squareId, player) {
             }
         }
     }
+}
+
+function undo(){
+
 }
 
 startGame();
