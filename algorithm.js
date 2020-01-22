@@ -62,7 +62,7 @@ function checkWin(board, player, curPos) {
             else if (player === 'X') wonPlayer = 'PLAYER2';
 
             for (let i = 0; i < arr.length; i++) {
-                board[arr[i][0]][arr[i][1]].style.backgroundColor = "red";
+                board[arr[i][0]][arr[i][1]].style.backgroundColor = winColor;
             }
             console.log(arr);
             return true;
