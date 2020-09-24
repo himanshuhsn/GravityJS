@@ -15,3 +15,7 @@ A simple strategic game to play, developed in js. Have fun.
 
 - The player who first fills 4 consecutive horizontal, vertical or diagonal cells will be the winner.
 - No upper cell can be filled unless all the cell below the given cell (if present) is filled.
+
+## Site
+
+- Live instance of the site can be seen at https://himanshuhsn.github.io/Gravity/
