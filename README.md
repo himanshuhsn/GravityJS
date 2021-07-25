@@ -18,4 +18,4 @@ A simple strategic game to play, developed in js. Have fun.
 
 ## Site
 
-- Live instance of the site can be seen at https://himanshuhsn.github.io/Gravity/
+- Live instance of the site can be seen at https://himanshuhsn.github.io/GravityJS/
